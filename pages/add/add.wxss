@@ -1,0 +1,20 @@
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.set_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 120rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+  position: fixed;
+}
+.set_button::after{
+  border: 0px;
+}
+.set_image{
+  width: 80rpx;
+  height: 80rpx;
+}

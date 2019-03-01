@@ -1,0 +1,21 @@
+/* pages/about/about.wxss */
+.container{
+  display: flex;
+  text-align: center;
+}
+.container image{
+  width: 400rpx;
+  height: 400rpx;
+}
+.contact{
+  margin-top: 20rpx;
+  color:aqua;
+}
+.tell{
+  display: flex;
+  text-align: center;
+  text-size-adjust: 20rpx;
+}
+.tell button::after{
+  border:none;
+}

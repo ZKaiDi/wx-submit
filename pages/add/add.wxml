@@ -1,0 +1,44 @@
+<view>
+  <form bindsubmit="formSubmit">
+    <view class='tname' style='display:flex;margin-left:150rpx;margin-top:30rpx'>
+      <view class='title'>姓　　名</view>
+      <input placeholder="请输入姓名" class='radius' bindhange='getname' name='name' style='margin-left:20rpx;border-bottom: 2rpx #000 solid;width:220rpx;padding-left:30rpx'></input>
+    </view>
+    <view class='tname' style='display:flex;margin-left:150rpx;margin-top:50rpx'>
+      <view class='title'>部　　门</view>
+      <input placeholder="请输入部门" class='radius' name='department' style=';margin-left:20rpx;border-bottom: 2rpx #000 solid;width:220rpx;padding-left:30rpx'></input>
+    </view>
+
+    <view style='display:flex;margin-left:150rpx;margin-top:50rpx'>
+      <view class='title'>故障元件</view>
+      <picker bindchange="PickerChange" index="{{index}}" range="{{picker}}" value="{{picker}}" name='machine'>
+        <view class="picker" style='margin-left:20rpx;padding-left:30rpx;border-bottom: 2rpx #000 solid;width:220rpx'>
+          {{index?picker[index]:"请选择一项"}}
+        </view>
+      </picker>
+    </view>
+  
+    <view style='display:flex;margin-left:150rpx;margin-top:50rpx'>
+      <view class='title' >日期选择</view>
+      <picker mode="date" value="{{date}}" start="2015-01-01" end="2025-01-01" bindchange="DateChange" name='date' style='margin-left:20rpx;padding-left:30rpx'>
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='title'>
+      <textarea placeholder="　请描述详细情况······" maxlength="-1" name='detaill' style='border:1rpx #000 solid;margin-top:40rpx'></textarea>
+    </view>
+
+    <button style='margin-top:30rpx;background-color:#D1EEEE;width:80%' form-type='submit'>
+    确认提交
+    </button>
+    <button style='margin-top:20rpx;background-color:#D1EEEE;width:80%' form-type='reset'>
+    取消
+    </button>
+  </form>
+  <navigator class="set_button" url='../adm/adm' hover-class='none'>
+      <image class="set_image" src="/img/4.png"></image>
+  </navigator>
+</view>

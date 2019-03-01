@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/auth/auth",
+    "pages/adm/adm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#66ffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Hi",
+        "iconPath": "/img/1.png",
+        "selectedIconPath": "/img/1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "Add",
+        "iconPath": "/img/2.png",
+        "selectedIconPath": "/img/2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "About",
+        "iconPath": "/img/3.png",
+        "selectedIconPath": "/img/3.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<view class='container'>
+  <image src='/img/logo.png' mode='scaletoFill'></image>
+  <view>{{ti}}</view>
+  <view>{{who}}</view>
+  <view class='contact'>
+    <text bindtap='bindviewtap'>联系我们</text>
+      <view>
+      <modal title="联系方式" hidden="{{modalHidden}}" confirm-text="确定"
+      cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+        <view class='tell'>
+        <button bindtap='cell'>{{tel}}</button>
+        </view>
+        <view class='tell'>
+        <button bindtap='copy'>{{qq}}</button>
+        </view>
+      </modal>
+      </view>
+  </view>
+</view>

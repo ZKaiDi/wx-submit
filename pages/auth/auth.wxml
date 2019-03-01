@@ -1,0 +1,13 @@
+<view class='UCenter-bg'>
+  <image src='/img/logo.png' class='png' mode='widthFix'></image>
+  <view class='text-xl'>
+    <text class='text-ti'>故障反馈</text>
+    <text class='text-df'>v 1.0</text>
+  </view>
+  <view class='margin-top-sm'>
+    <text>By:信息管理部</text>
+  </view>
+</view>
+<view class='padding-xl'>
+  <button class='cu-btn  bg-green shadow lg block' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">微信登录</button>
+</view>

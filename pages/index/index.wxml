@@ -1,0 +1,22 @@
+
+      <view class="card" >
+        <view bindtap="onItemClick" style='background-color:white'>
+          <image class="image" mode="scaleToFill" src="https://image4.suning.cn/uimg/cms/img/153818701965058151.jpg?from=mobile"/>
+          <text class="time">时间</text>
+          <view class="title">标题</view>
+          </view>
+      </view>
+      <view class="card" >
+        <view bindtap="onItemClick" style='background-color:white'>
+          <image class="image" mode="scaleToFill" src="https://image.weilanwl.com/img/4x3-1.jpg"/>
+          <text class="time">时间</text>
+          <view class="title">标题</view>
+          </view>
+      </view>
+      <view class="card" >
+        <view bindtap="onItemClick" style='background-color:white'>
+          <image class="image" mode="scaleToFill" src="http://pnfjs96w3.bkt.clouddn.com/test.jpg"/>
+          <text class="time">时间</text>
+          <view class="title">标题</view>
+          </view>
+      </view>
