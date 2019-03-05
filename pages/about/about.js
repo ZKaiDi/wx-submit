@@ -40,7 +40,7 @@ Page({
   //点击联系我们QQ按钮事件
   copy:function(){
     wx.setClipboardData({
-      data: '1325351376'
+      data: '10010'
     })
   },
 

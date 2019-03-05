@@ -1,0 +1,27 @@
+/* pages/admin/admin.wxss */
+.img image{
+  margin-top: 25%;
+  margin-left: 25%;
+  width: 50%;
+  height:300rpx
+}
+.section{
+  display: flex;
+  width: 80%;
+}
+.section text{
+  display: flex;
+  margin-left: 15%;
+  margin-top: 20rpx;
+  width: 40%;
+}
+.section input{
+  display: flex;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  text-align: center;
+}
+button{
+  margin-top:80rpx;
+  width:40%;
+}

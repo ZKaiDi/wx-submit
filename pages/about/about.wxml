@@ -1,5 +1,5 @@
 <view class='container'>
-  <image src='/img/logo.png' mode='scaletoFill'></image>
+  <image src='/img/adm.png' mode='scaletoFill'></image>
   <view>{{ti}}</view>
   <view>{{who}}</view>
   <view class='contact'>

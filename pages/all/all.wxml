@@ -1,0 +1,14 @@
+<view wx:for="{{data_list}}" class='main'>
+  <van-card
+  tag="{{item.name}}" 
+  title="{{item.machine}}"
+  thumb="../../img/thumb.jpg"
+  >
+  <view slot="desc">
+  <text class="desc">{{item.detaill}}</text>
+  </view>
+  <view slot="footer" class='footer'>
+  <van-button>{{item.date}}</van-button>
+  </view>
+  </van-card>
+</view>

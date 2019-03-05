@@ -1,5 +1,5 @@
 <view class='UCenter-bg'>
-  <image src='/img/logo.png' class='png' mode='widthFix'></image>
+  <image src='/img/adm.png' class='png' mode='widthFix'></image>
   <view class='text-xl'>
     <text class='text-ti'>故障反馈</text>
     <text class='text-df'>v 1.0</text>
