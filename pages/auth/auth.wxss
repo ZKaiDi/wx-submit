@@ -34,4 +34,6 @@
 }
 .cu-btn{
   margin-top: 50px;
+  width: 60%;
+  background-color: skyblue;
 }

@@ -13,7 +13,6 @@ Page({
   onPullDownRefresh() {
     this.onLoad()
     wx.showNavigationBarLoading() //在标题栏中显示加载
-    wx.stopPullDownRefresh()
   },
 
   onLoad: function () {
@@ -36,11 +35,13 @@ Page({
       _openid:this.data.openid
     }).get({
       success:res=>{
+        wx.stopPullDownRefresh()
+        wx.hideNavigationBarLoading()
         this.setData({
           queryResult: JSON.stringify(res.data, null, 2),
         })
         //调试信息
-        /*console.log('查询成功：', res.data[0])*/
+        //console.log('查询成功：', res.data[0])
         this.setData({
           data_list:res.data
         })
@@ -50,6 +51,8 @@ Page({
         })
       },
       fail:err=>{
+        wx.stopPullDownRefresh()
+        wx.hideNavigationBarLoading()
         wx.showToast({
           title: '查询记录失败',
         })

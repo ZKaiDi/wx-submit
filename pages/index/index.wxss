@@ -12,13 +12,9 @@
 }
 
 .title{
-  font-size: 30rpx;
+  font-size: 20rpx;
 }
 
 .desc{
-  font-size: 40rpx;
-}
-
-.footer van-button::after{
-  border: none;
+  font-size: 30rpx;
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: 40rpx;
 }
 .set_button{
   background-color: rgba(255, 255, 255, 0);
@@ -17,4 +18,34 @@
 .set_image{
   width: 80rpx;
   height: 80rpx;
+}
+.tname{
+  display:flex;
+  margin-left:10%;
+  margin-top:10%;
+}
+.tnamex{
+  margin-top: 50rpx;
+}
+.pic{
+  display:flex;
+  margin-left:10%;
+  margin-top:50rpx
+}
+.contain input{
+  text-align: center;
+  margin-left: 10%;
+  border-bottom: 2rpx #000 solid;
+  width:50%;
+}
+.contain picker{
+  text-align: center;
+  margin-left: 10%;
+  width:50%;
+  border-bottom: 2rpx #000 solid;
+}
+.title textarea{
+  border:1rpx #000 solid;
+  margin-top:40rpx;
+  width:80%
 }

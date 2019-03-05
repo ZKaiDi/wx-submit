@@ -9,6 +9,9 @@ Page({
   },
 
   formSubmit(e) {
+    wx.showLoading({
+      title: '正在提交···',
+    })
     const db = wx.cloud.database()
     /*console.log('form发生了submit事件，携带数据为：', e.detail.value)*/
     db.collection('work').add({
@@ -20,6 +23,7 @@ Page({
         date:e.detail.value.date
       },
         success:res=>{
+          wx.hideLoading()
           //返回结果处理
           wx.showToast({
             title:"提交成功",
@@ -27,6 +31,7 @@ Page({
           /*console.log('提交成功: ',res._id)*/
         },
         fail:err=>{
+          wx.hideLoading()
           wx.showToast({
             icon:'none',
             title: '提交失败，请检查网络连接'
